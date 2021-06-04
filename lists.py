@@ -26,11 +26,14 @@ mudkip = ['name = Mudkip', ["3rd generation pokemon", "Evolves into Marshstomp"]
 #mudkip.remove("name = Mudkip")
 #print(mudkip)
 
-mudkip.reverse()
-print(mudkip)
+#mudkip.reverse()
+#print(mudkip)
 
 
-print(mudkip.count("Water type pokemon"))
+#print(mudkip.count("Water type pokemon"))
+
+print(", ".join(gen_3_pokemon))
 
 
+### Tuples ###
 
