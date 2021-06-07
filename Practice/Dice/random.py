@@ -1,4 +1,3 @@
-
 import random
 
 def rolldice(min, max):
@@ -6,7 +5,6 @@ def rolldice(min, max):
     number = random.randint(min, max) 
     print(f"You have rolled a : {number}")
 
-rolldice(1,6)
  
 
 
