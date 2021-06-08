@@ -1,4 +1,12 @@
 def grade(name, homework, assessment, final_exam):
+    
+    if homework >25 or homework <0:
+        return "Homework score not in acceptable range(/25)"
+    if assessment >50 or assessment <0:
+        return "Assessment score not in acceptable range (/50)"
+    if final_exam >100 or final_exam <0:
+        return "Final Exam score not in acceptable range (/100)"
+
     total_score = homework + assessment + final_exam
     score = round((total_score/175)*100)
 
@@ -23,9 +31,10 @@ assessment = int(input("Please enter your Assessment score here (out of 50): "))
 final_exam = int(input("Please enter your Final Exam score here (out of 100): "))
 student_name = input("Please enter your name: ")
 
-grade1 = grade(student_name, homework, assessment, final_exam) 
+final_grade = grade(student_name, homework, assessment, final_exam) 
 
-print(f"name: {student_name} with grade: {grade1}")
+
+print(f"name: {student_name}, Achieved grade: {final_grade}")
 
 
 
