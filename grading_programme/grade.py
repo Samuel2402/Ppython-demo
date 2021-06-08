@@ -3,27 +3,29 @@ def grade(name, homework, assessment, final_exam):
     score = round((total_score/175)*100)
 
     if score >= 90:
-        grade = A(star)
+        grade = 'A(star)'
     elif score >= 80:
-        grade = A
+        grade = 'A'
     elif score >= 70:
-        grade = B
-    elif sore >= 60:
-        grade = C
+        grade = 'B'
+    elif score >= 60:
+        grade = "C"
     elif score >= 50:
-        grade = D
+        grade = 'D'
     elif score >= 40:
-        grade = E
+        grade = 'E'
     else:
-        grade = Fail
+        grade = "Fail"
     return grade
 
-homework = print(int(input("Please enter your Homework score here (out of 25): ")))
-assessment = print(int(input("Please enter your Assessment score here (out of 50): ")))
-final_exam = print(int(input("Please enter your Final Exam score here (out of 100): ")))
-student_name = print (input("Please enter your name: "))
+homework = int(input("Please enter your Homework score here (out of 25): "))
+assessment = int(input("Please enter your Assessment score here (out of 50): "))
+final_exam = int(input("Please enter your Final Exam score here (out of 100): "))
+student_name = input("Please enter your name: ")
 
-print(f"name: {student_name} got score: {grade} overall.")
+grade1 = grade(student_name, homework, assessment, final_exam) 
+
+print(f"name: {student_name} with grade: {grade1}")
 
 
 
