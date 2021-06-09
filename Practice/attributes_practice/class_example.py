@@ -29,11 +29,3 @@ print(d.sounds())
     
 
 
-class Books():
-    def __init__(self,title,author,pages):
-        self.title = title
-        self.author = author
-        self.pages = pages 
-
-mybook = books("i love python!", "Sam", 150)
-print(mybook, "author")
