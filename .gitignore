@@ -3,4 +3,5 @@ __pycache__/
 grading_programme_venv/
 *.pyc
 .coverage/
-warmup_2_venv/
+warmup_2_venv
+requirements.txt/

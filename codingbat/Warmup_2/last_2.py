@@ -1,4 +1,4 @@
-def last2():
+def last2(str):
   if len(str) < 2:
     return 0
   last2 = str[-2:]
@@ -8,6 +8,7 @@ def last2():
     if selected == last2:
       count = count + 1
   return count
+
 
 
 
