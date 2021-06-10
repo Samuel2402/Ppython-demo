@@ -1,10 +1,10 @@
 def string_match(a, b):
-    len_a = len(str(a))
-    len_b = len(str(b))
+    shorter = min(len(a), len(b))
     count = 0
-    for i in range(len_a, len_b):
-        if len_a[i] == len_b[i]:
+    for i in range(shorter-1):
+        a_sub = a[i:i+2]
+        b_sub = b[i:i+2]
+        if a_sub == b_sub:
             count = count + 1
-
     return count
 
