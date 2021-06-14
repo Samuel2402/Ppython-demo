@@ -1,8 +1,10 @@
 from app import db, Users 
+# from app import Users            - as alternative 
 
-db.drop_all()
-db.create_all()
+db.drop_all()                      #- deletes existing ables 
+db.create_all()                    #- re-populates ables 
 
-testuser = Users(first_name='Grooty',last_name='Toot') # Extra: this section populates the table with an example entry
-db.session.add(testuser)
+test_user = Users(first_name='Grooty',last_name='Toot') # Example entry
+db.session.add(test_user)           #
+
 db.session.commit()
